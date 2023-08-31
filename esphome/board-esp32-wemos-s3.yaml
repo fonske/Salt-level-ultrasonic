@@ -64,7 +64,7 @@ button:
     on_press:
       then:
         - text_sensor.template.publish:
-            id: saltlevel_fill_last
+            id: salt_level_fill_last
             state: !lambda |-
               char str[32];
               time_t currTime = id(salt_level_sntp_time).now().timestamp;
