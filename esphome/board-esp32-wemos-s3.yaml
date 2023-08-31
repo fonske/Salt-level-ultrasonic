@@ -54,3 +54,21 @@ captive_portal:
 # Enable Web server.
 web_server:
   port: 80
+
+## watermeter pulse / relay 1
+button:
+## temporarely test button for testing reg puls
+  - id: saltfill_button
+    name: Salt fill
+    platform: template
+    on_press:
+      then:
+        - text_sensor.template.publish:
+            id: salt_level_fill_last
+            state: !lambda |-
+              char str[32];
+              time_t currTime = id(salt_level_sntp_time).now().timestamp;
+              strftime(str, sizeof(str), "%a %d %b %H:%M", localtime(&currTime));
+              return  { str };
+        - lambda: |-
+            ESP_LOGI("Saltfill", "button pressed");
