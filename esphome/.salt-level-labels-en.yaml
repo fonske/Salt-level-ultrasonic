@@ -1,4 +1,6 @@
 substitutions:
+  name: saltlevel
+  friendly_name: Saltlevel
   salt_level_distance: Saltlevel distance
   salt_level_procent: Saltlevel procent
   salt_level_height: Saltlevel height
@@ -16,11 +18,3 @@ substitutions:
   days: days
   salt_level_yes: "yes"
   salt_level_no: "no"
-
-text_sensor:
-  # Expose last regeneration information as sensor / already in English
-  - platform: template
-    name: ${salt_level_regeneration_last}
-    id: salt_level_regeneration_last
-    icon: mdi:clock-start
-    update_interval: never
