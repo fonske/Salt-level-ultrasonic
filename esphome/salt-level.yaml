@@ -1,5 +1,4 @@
 substitutions:
-  name: ${name}
   device_description: "ESP to read out a watersoftener Salt tank with ultrasonic sensor."
   timezone: "Europe/Amsterdam"  
 
