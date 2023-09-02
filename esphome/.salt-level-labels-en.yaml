@@ -10,7 +10,7 @@ substitutions:
   salt_level_height_min: Min distance salt
   salt_level_height_max: Max distance salt
   salt_level_height_fill: Fill salt distance
-  salt_level_ip: Salt level IP
+  salt_level_ip: Saltlevel IP
   salt_level_wifi_signal_db: WiFi Signal dB
   salt_level_wifi_signal_db_percent: WiFi Signal
   salt_level_uptime: Uptime
