@@ -19,7 +19,7 @@ packages:
       # - esphome/board-esp8266-wemos-d1.yaml
 
 esphome:
-  name: ${friendly_name}
+  name: ${name}
   includes:
     - distance-sensor2.h
 
