@@ -17,6 +17,13 @@ packages:
       - esphome/board-esp32-wemos-s3.yaml
       # - esphome/board-esp8266-wemos-d1.yaml
 
+## for developing/testing, uncomment local includes and comment out above remote_package part.
+#packages:
+#  substitutions: !include .salt-level-labels-en.yaml
+#  substitutions: !include .salt-level-labels-nl.yaml
+#  device_base1:  !include board-esp32-wemos-s3.yaml
+#  device_base1:  !include board-esp8266-wemos-d1.yaml
+
 esphome:
   name: "${name}"
   includes:
